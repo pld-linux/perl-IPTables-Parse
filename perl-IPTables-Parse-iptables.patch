@@ -1,0 +1,11 @@
+--- psad-2.0.1/IPTables-Parse/lib/IPTables/Parse.pm~	2006-09-06 03:00:30.000000000 +0300
++++ psad-2.0.1/IPTables-Parse/lib/IPTables/Parse.pm	2006-12-18 02:27:05.356998921 +0200
+@@ -29,7 +29,7 @@
+     my %args  = @_;
+ 
+     my $self = {
+-        _iptables => $args{'iptables'} || '/sbin/iptables'
++        _iptables => $args{'iptables'} || '/usr/sbin/iptables'
+     };
+     croak "[*] $self->{'_iptables'} incorrect path.\n"
+         unless -e $self->{'_iptables'};
