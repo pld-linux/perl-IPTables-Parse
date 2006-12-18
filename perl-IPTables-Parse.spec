@@ -13,6 +13,7 @@ Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cipherdyne.org/psad/download/psad-2.0.1.tar.gz
+Patch0:		%{name}-iptables.patch
 URL:		http://www.cipherdyne.org/psad/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -24,6 +25,7 @@ Perl interface to parse iptables rulesets.
 
 %prep
 %setup -q -n psad-2.0.1
+%patch0 -p1
 
 %build
 cd IPTables-Parse
