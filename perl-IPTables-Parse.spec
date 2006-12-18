@@ -19,11 +19,8 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_noautoreq	'perl(anything_fake_or_conditional)'
-
 %description
 Perl interface to parse iptables rulesets.
-
 
 %prep
 %setup -q -n psad-2.0.1
