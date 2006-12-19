@@ -6,6 +6,7 @@
 %define		pdir	IPTables
 %define		pnam	Parse
 Summary:	Perl interface to parse iptables rulesets
+Summary(pl):	Perlowy interfejs do analizy zbiorów regu³ iptables
 Name:		perl-IPTables-Parse
 Version:	0.4
 Release:	1
@@ -13,6 +14,7 @@ Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cipherdyne.org/psad/download/psad-2.0.1.tar.gz
+# Source0-md5:	a1604b68e31178e7e0cbbfd7c1cd4edf
 Patch0:		%{name}-iptables.patch
 URL:		http://www.cipherdyne.org/psad/
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -22,6 +24,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Perl interface to parse iptables rulesets.
+
+%description -l pl
+Perlowy interfejs do analizy zbiorów regu³ iptables.
 
 %prep
 %setup -q -n psad-2.0.1
@@ -37,8 +42,8 @@ cd IPTables-Parse
 
 %install
 rm -rf $RPM_BUILD_ROOT
-cd IPTables-Parse
-%{__make} pure_install \
+
+%{__make} -C IPTables-Parse pure_install \
 	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
