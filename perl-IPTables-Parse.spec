@@ -6,7 +6,7 @@
 %define		pdir	IPTables
 %define		pnam	Parse
 Summary:	Perl interface to parse iptables rulesets
-Summary(pl.UTF-8):   Perlowy interfejs do analizy zbiorów reguł iptables
+Summary(pl.UTF-8):	Perlowy interfejs do analizy zbiorów reguł iptables
 Name:		perl-IPTables-Parse
 Version:	0.4
 Release:	1
