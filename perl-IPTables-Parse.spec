@@ -29,7 +29,7 @@ Perlowy interfejs do analizy zbiorów reguł iptables.
 
 %prep
 %setup -q -n psad-2.0.1
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 cd IPTables-Parse
