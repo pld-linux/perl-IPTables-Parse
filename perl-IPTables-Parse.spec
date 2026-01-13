@@ -8,7 +8,7 @@ Summary:	Perl interface to parse iptables rulesets
 Summary(pl.UTF-8):	Perlowy interfejs do analizy zbiorów reguł iptables
 Name:		perl-IPTables-Parse
 Version:	0.4
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
